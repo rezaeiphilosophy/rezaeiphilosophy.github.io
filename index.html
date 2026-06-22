@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Ali Rezaei</title>
+
+<style>
+:root {
+  --bg: #ffffff;
+  --text: #000000;
+  --muted: #555555;
+  --link: #0066cc;
+  --details-marker: #888888;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  padding: 50px;
+  font: 14px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans",
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 400;
+  margin: 0;
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.page-title {
+  margin: 0 0 45px 10px;
+  font-size: 28px;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.left {
+  width: 20%;
+  padding: 10px;
+}
+
+.middle {
+  flex: 1;
+  padding: 10px;
+}
+
+.right {
+  width: 20%;
+  padding: 10px;
+}
+
+h2 {
+  margin: 0 0 18px 0;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+details {
+  margin-bottom: 6px;
+}
+
+summary {
+  padding: 3px 0 3px 18px;
+  cursor: pointer;
+  position: relative;
+  list-style: none;
+  color: var(--text);
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary::before {
+  content: "›";
+  position: absolute;
+  left: 0;
+  color: var(--details-marker);
+  font-size: 16px;
+  line-height: 1.2;
+  transition: transform 0.15s;
+}
+
+details[open] summary::before {
+  transform: rotate(90deg);
+}
+
+.abstract {
+  padding: 6px 0 8px 18px;
+  font-size: 13.5px;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+img {
+  width: 100%;
+  max-width: 260px;
+  height: auto;
+  display: block;
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    padding: 28px;
+  }
+
+  .left,
+  .middle,
+  .right {
+    width: 100%;
+  }
+
+  img {
+    max-width: 300px;
+  }
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+  <h2 class="page-title">Ali Rezaei</h2>
+
+  <div class="row">
+
+    <div class="left">
+      <h2>about</h2>
+
+      <p>
+        I am a philosophy PhD student at
+        <a href="https://as.nyu.edu/departments/philosophy/directory/students/Ali_Rezaei.html" target="_blank">NYU</a>
+        working on philosophy of mind, cognitive science, and epistemology.
+        You can email me at ar6825@nyu.edu, and find a CV
+        <a href="cv.pdf" target="_blank">here</a>.
+      </p>
+    </div>
+
+    <div class="middle">
+      <h2>articles</h2>
+
+      <details>
+        <summary>
+          When Nothing Looks Blue, with
+          <a href="https://www.myweb.ttu.edu/josgottl/" target="_blank">Joseph Gottlieb</a>.
+          2020. <i>Synthese</i> 199(1–2):2553–2561.
+        </summary>
+        <div class="abstract">
+          This paper discusses property representationalism and visual experience,
+          focusing on cases in which nothing looks blue. It responds to worries about
+          reductive representationalism and clarifies what such views should say about
+          phenomenal character and perceptual representation.
+        </div>
+      </details>
+
+      <details>
+        <summary>
+          Singular Experience. 2024. <i>Australasian Journal of Philosophy</i>
+          102(2):389–406.
+        </summary>
+        <div class="abstract">
+          Almost every visual experience presents a unified state of affairs and one or
+          more particular things. This paper argues that understanding visual experience
+          as having singular propositional content explains these features better than
+          several rival views. It also defends the surprising consequence that there are
+          no visual hallucinations in the traditional sense.
+        </div>
+      </details>
+
+    </div>
+
+    <div class="right">
+      <h2>&nbsp;</h2>
+      <p>
+        <img src="photo.jpg" alt="Ali Rezaei">
+      </p>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>
