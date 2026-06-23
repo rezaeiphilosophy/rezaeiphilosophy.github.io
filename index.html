@@ -7,49 +7,27 @@
 <title>Ali Rezaei</title>
 
 <style>
-:root {
-  --bg: #ffffff;
-  --text: #000000;
-  --muted: #555555;
-  --details-marker: #888888;
-}
-
 * {
   box-sizing: border-box;
 }
 
 body {
-  background-color: var(--bg);
-  color: var(--text);
-  padding: 50px;
   font-family: Georgia, serif;
-  font-size: 1em;
-  line-height: 1.5;
-  font-weight: 400;
-  margin: 0;
-}
-
-a:link, a:visited {
-  text-decoration: none;
-  color: #0000FF;
-}
-
-a:hover, a:active {
-  text-decoration: none;
-  color: #0000FF;
+  margin: 10px;
+  color: #000000;
+  background: #ffffff;
 }
 
 .container {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 10px auto;
 }
 
-.page-title {
-  margin: 0 0 45px 10px;
-  font-size: 1.6em;
-  font-weight: normal;
+h2.page-title {
+  margin-left: 10px;
   font-family: Georgia, serif;
-  color: var(--text);
+  font-weight: normal;
+  font-size: 1.5em;
 }
 
 .row {
@@ -58,7 +36,7 @@ a:hover, a:active {
 }
 
 .left {
-  width: 20%;
+  width: 25%;
   padding: 10px;
 }
 
@@ -73,16 +51,25 @@ a:hover, a:active {
 }
 
 h2 {
-  margin: 0 0 18px 0;
-  font-size: 1.1em;
-  font-weight: normal;
   font-family: Georgia, serif;
+  font-weight: normal;
 }
 
-p {
-  margin-top: 0;
-  margin-bottom: 24px;
-  font-size: 1em;
+a:link, a:visited {
+  text-decoration: none;
+  color: #0000FF;
+}
+
+a:hover, a:active {
+  text-decoration: none;
+  color: #0000FF;
+}
+
+img {
+  width: 100%;
+  max-width: 260px;
+  height: auto;
+  display: block;
 }
 
 details {
@@ -94,8 +81,6 @@ summary {
   cursor: pointer;
   position: relative;
   list-style: none;
-  color: var(--text);
-  font-size: 0.9em;
 }
 
 summary::-webkit-details-marker {
@@ -106,7 +91,7 @@ summary::before {
   content: "›";
   position: absolute;
   left: 0;
-  color: var(--details-marker);
+  color: #888888;
   font-size: 16px;
   line-height: 1.2;
   transition: transform 0.15s;
@@ -118,31 +103,13 @@ details[open] summary::before {
 
 .abstract {
   padding: 6px 0 8px 18px;
-  font-size: 0.9em;
-  color: var(--muted);
+  color: #555555;
   line-height: 1.6;
 }
 
-img {
-  width: 100%;
-  max-width: 260px;
-  height: auto;
-  display: block;
-}
-
 @media screen and (max-width: 800px) {
-  body {
-    padding: 28px;
-  }
-
-  .left,
-  .middle,
-  .right {
+  .left, .middle, .right {
     width: 100%;
-  }
-
-  img {
-    max-width: 300px;
   }
 }
 </style>
@@ -156,81 +123,81 @@ img {
   <div class="row">
 
     <div class="left">
-      <h2>About</h2>
-
-      <p>
-        I am a philosophy PhD student at
+      <div style="font-size: 1em"><b>about</b></div>
+      <br>
+      <div style="font-size: 1em">
+        <p>I am a philosophy PhD student at
         <a href="https://as.nyu.edu/departments/philosophy/directory/students/Ali_Rezaei.html" target="_blank">NYU</a>
         working on philosophy of mind, cognitive science, and epistemology.
         You can email me at ar6825@nyu.edu, and find a CV
-        <a href="cv.pdf" target="_blank">here</a>.
-      </p>
+        <a href="cv.pdf" target="_blank">here</a>.</p>
 
-      <p>
-        You can reach me at ar6825-at-nyu.edu. My google scholar page is
-        <a href="https://philpeople.org/profiles/ali-rezaei-1" target="_blank">here</a>.
-      </p>
+        <p>You can reach me at ar6825-at-nyu.edu. My google scholar page is
+        <a href="https://philpeople.org/profiles/ali-rezaei-1" target="_blank">here</a>.</p>
+      </div>
     </div>
 
     <div class="middle">
-      <h2>Articles</h2>
+      <div style="font-size: 1em"><b>articles</b></div>
+      <br>
+      <div style="font-size: .9em">
 
-      <details>
-        <summary>
-          When Nothing Looks Blue, with
-          <a href="https://www.myweb.ttu.edu/josgottl/" target="_blank">Joseph Gottlieb</a>.
-          2020. <i>Synthese</i> 199(1–2):2553–2561.
-        </summary>
-        <div class="abstract">
-          This paper discusses property representationalism and visual experience,
-          focusing on cases in which nothing looks blue. It responds to worries about
-          reductive representationalism and clarifies what such views should say about
-          phenomenal character and perceptual representation.
-        </div>
-      </details>
+        <details>
+          <summary>
+            When Nothing Looks Blue, with
+            <a href="https://www.myweb.ttu.edu/josgottl/" target="_blank">Joseph Gottlieb</a>.
+            2020. <i>Synthese</i> 199(1–2):2553–2561.
+          </summary>
+          <div class="abstract">
+            This paper discusses property representationalism and visual experience,
+            focusing on cases in which nothing looks blue. It responds to worries about
+            reductive representationalism and clarifies what such views should say about
+            phenomenal character and perceptual representation.
+          </div>
+        </details>
 
-      <details>
-        <summary>
-          Singular Experience. 2024. <i>Australasian Journal of Philosophy</i>
-          102(2):389–406.
-        </summary>
-        <div class="abstract">
-          Almost every visual experience presents a unified state of affairs and one or
-          more particular things. This paper argues that understanding visual experience
-          as having singular propositional content explains these features better than
-          several rival views. It also defends the surprising consequence that there are
-          no visual hallucinations in the traditional sense.
-        </div>
-      </details>
+        <br>
 
-      <h2 style="margin-top: 36px;">Under Review</h2>
+        <details>
+          <summary>
+            Singular Experience. 2024. <i>Australasian Journal of Philosophy</i>
+            102(2):389–406.
+          </summary>
+          <div class="abstract">
+            Almost every visual experience presents a unified state of affairs and one or
+            more particular things. This paper argues that understanding visual experience
+            as having singular propositional content explains these features better than
+            several rival views. It also defends the surprising consequence that there are
+            no visual hallucinations in the traditional sense.
+          </div>
+        </details>
 
-      <details>
-        <summary>
-          A paper about immersion in fiction.
-        </summary>
-      </details>
+        <br><br>
+        <div style="font-size: 1.1em"><b>under review</b></div>
+        <br>
 
-      <h2 style="margin-top: 36px;">Pipeline</h2>
+        <details>
+          <summary>A paper about immersion in fiction.</summary>
+        </details>
 
-      <details>
-        <summary>
-          A paper on reality monitoring and consciousness.
-        </summary>
-      </details>
+        <br><br>
+        <div style="font-size: 1.1em"><b>pipeline</b></div>
+        <br>
 
-      <details>
-        <summary>
-          A paper on conscious reasoning.
-        </summary>
-      </details>
+        <details>
+          <summary>A paper on reality monitoring and consciousness.</summary>
+        </details>
+
+        <details>
+          <summary>A paper on conscious reasoning.</summary>
+        </details>
+
+      </div>
     </div>
 
     <div class="right">
-      <h2>&nbsp;</h2>
-      <p>
-        <img src="photo.jpg" alt="Ali Rezaei">
-      </p>
+      <br>
+      <img src="photo.jpg" alt="Ali Rezaei">
     </div>
 
   </div>
