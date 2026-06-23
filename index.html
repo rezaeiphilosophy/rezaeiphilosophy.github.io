@@ -33,6 +33,7 @@ h2.page-title {
 .row {
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-start;
 }
 
 .left {
@@ -104,7 +105,11 @@ details[open] summary::before {
 
 .section-label {
   font-size: 1em;
-  margin-bottom: 8px;
+  margin: 0 0 6px 0;
+}
+
+p {
+  margin-top: 0;
 }
 
 @media screen and (max-width: 800px) {
