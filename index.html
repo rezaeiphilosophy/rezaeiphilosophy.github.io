@@ -36,7 +36,7 @@ h2.page-title {
 }
 
 .left {
-  width: 25%;
+  width: 18%;
   padding: 10px;
 }
 
@@ -48,11 +48,6 @@ h2.page-title {
 .right {
   width: 20%;
   padding: 10px;
-}
-
-h2 {
-  font-family: Georgia, serif;
-  font-weight: normal;
 }
 
 a:link, a:visited {
@@ -107,6 +102,11 @@ details[open] summary::before {
   line-height: 1.6;
 }
 
+.section-label {
+  font-size: 1em;
+  margin-bottom: 8px;
+}
+
 @media screen and (max-width: 800px) {
   .left, .middle, .right {
     width: 100%;
@@ -123,8 +123,7 @@ details[open] summary::before {
   <div class="row">
 
     <div class="left">
-      <div style="font-size: 1em"><b>about</b></div>
-      <br>
+      <div class="section-label"><b>About</b></div>
       <div style="font-size: 1em;">
         <p>I am a philosophy PhD student at
         <a href="https://as.nyu.edu/departments/philosophy/directory/students/Ali_Rezaei.html" target="_blank">NYU</a>
@@ -135,8 +134,7 @@ details[open] summary::before {
     </div>
 
     <div class="middle">
-      <div style="font-size: 1em"><b>Articles</b></div>
-      <br>
+      <div class="section-label"><b>Articles</b></div>
       <div style="font-size: .9em">
 
         <details>
@@ -193,7 +191,7 @@ details[open] summary::before {
     </div>
 
     <div class="right">
-      <br>
+      <div class="section-label">&nbsp;</div>
       <img src="photo.jpg" alt="Ali Rezaei">
     </div>
 
