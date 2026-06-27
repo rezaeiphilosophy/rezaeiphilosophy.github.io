@@ -68,39 +68,34 @@ img {
   display: block;
 }
 
-details {
+.paper {
   margin-bottom: 6px;
 }
 
-summary {
-  padding: 3px 0 3px 18px;
+.paper-meta {
+  padding: 3px 0;
+}
+
+.paper-links {
+  display: inline;
+  margin-left: 6px;
+  font-size: 0.95em;
+}
+
+.paper-links a {
+  color: #0000FF;
   cursor: pointer;
-  position: relative;
-  list-style: none;
-}
-
-summary::-webkit-details-marker {
-  display: none;
-}
-
-summary::before {
-  content: "›";
-  position: absolute;
-  left: 0;
-  color: #888888;
-  font-size: 16px;
-  line-height: 1.2;
-  transition: transform 0.15s;
-}
-
-details[open] summary::before {
-  transform: rotate(90deg);
 }
 
 .abstract {
-  padding: 6px 0 8px 18px;
+  display: none;
+  padding: 6px 0 8px 0;
   color: #555555;
   line-height: 1.6;
+}
+
+.abstract.open {
+  display: block;
 }
 
 .section-label {
@@ -142,55 +137,62 @@ p {
       <div class="section-label"><b>Articles</b></div>
       <div style="font-size: .9em">
 
-        <details>
-          <summary>
-            When Nothing Looks Blue, with
-            <a href="https://www.myweb.ttu.edu/josgottl/" target="_blank">Joseph Gottlieb</a>.
+        <div class="paper">
+          <div class="paper-meta">
+            When Nothing Looks Blue, with Joseph Gottlieb.
             2020. <i>Synthese</i> 199(1–2):2553–2561.
-          </summary>
-          <div class="abstract">
+            <span class="paper-links">
+              [<a onclick="toggleAbstract('abstract1')">abstract</a>]
+              [<a href="when-nothing-looks-blue.pdf" target="_blank">published version</a>]
+            </span>
+          </div>
+          <div class="abstract" id="abstract1">
             This paper discusses property representationalism and visual experience,
             focusing on cases in which nothing looks blue. It responds to worries about
             reductive representationalism and clarifies what such views should say about
             phenomenal character and perceptual representation.
           </div>
-        </details>
+        </div>
 
         <br>
 
-        <details>
-          <summary>
+        <div class="paper">
+          <div class="paper-meta">
             Singular Experience. 2024. <i>Australasian Journal of Philosophy</i>
             102(2):389–406.
-          </summary>
-          <div class="abstract">
+            <span class="paper-links">
+              [<a onclick="toggleAbstract('abstract2')">abstract</a>]
+              [<a href="singular-experience.pdf" target="_blank">published version</a>]
+            </span>
+          </div>
+          <div class="abstract" id="abstract2">
             Almost every visual experience presents a unified state of affairs and one or
             more particular things. This paper argues that understanding visual experience
             as having singular propositional content explains these features better than
             several rival views. It also defends the surprising consequence that there are
             no visual hallucinations in the traditional sense.
           </div>
-        </details>
+        </div>
 
         <br><br>
         <div style="font-size: 1.1em"><b>Under Review</b></div>
         <br>
 
-        <details>
-          <summary>A paper about immersion in fiction.</summary>
-        </details>
+        <div class="paper">
+          <div class="paper-meta">A paper about immersion in fiction.</div>
+        </div>
 
         <br><br>
-        <div style="font-size: 1.1em"><b>Pipeline</b></div>
+        <div style="font-size: 1.1em"><b>In Progress</b></div>
         <br>
 
-        <details>
-          <summary>A paper on reality monitoring and consciousness.</summary>
-        </details>
+        <div class="paper">
+          <div class="paper-meta">A paper on reality monitoring and consciousness.</div>
+        </div>
 
-        <details>
-          <summary>A paper on conscious reasoning.</summary>
-        </details>
+        <div class="paper">
+          <div class="paper-meta">A paper on conscious reasoning.</div>
+        </div>
 
       </div>
     </div>
@@ -202,5 +204,13 @@ p {
 
   </div>
 </div>
+
+<script>
+  function toggleAbstract(id) {
+    var el = document.getElementById(id);
+    el.classList.toggle('open');
+  }
+</script>
+
 </body>
 </html>
